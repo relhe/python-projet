@@ -7,10 +7,8 @@ b = 10  # en mm
 h = 20  # en mm
 
 # Calcul de l'inertie
-
-I = 
+inertie = (b * h ** 3) / 12
 
 # Calcul de la déformation maximale
-
-delta_max = 
-
+delta_max = (F * L ** 3) / (3 * 1000 * E * inertie)
+print("La deformation maximale de la poutre de section rectangulaire est %.2f mm" % delta_max)
